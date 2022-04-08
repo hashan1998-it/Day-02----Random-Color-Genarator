@@ -4,7 +4,7 @@
     :style="cssVarWrapper"
   >
     <div class="base-container text-center">
-      <h1>Random Hex</h1>
+      <h1 :style=" colorCode == '' && { color:'black'}">Random Hex</h1>
 
       <span class="hex-code" :style="cssSpanVar">
       <span v-if="colorCode == '' " style="fontSize:1.5rem; color:aqua; transition: all 0.5s ease-in;">Press the button to get random colors</span>
